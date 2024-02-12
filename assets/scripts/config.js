@@ -9,5 +9,6 @@ export default {
     "pic/让我当❤.png",
     "pic/可爱.png",
     "pic/被冷水强碱了.jpg",
+    "pic/有人打炮.png",
   ]
 }
