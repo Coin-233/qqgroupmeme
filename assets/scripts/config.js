@@ -2,6 +2,7 @@ export default {
   items: [
     "pic/梦开始的地方.png",
     "pic/剑酱的🐕 2.png",
+    "pic/触手play.png",
     "pic/被床撅晕.png",
     "pic/管理虚哩.jpg",
     "pic/剑酱的🐕.png",
