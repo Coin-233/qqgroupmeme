@@ -1,5 +1,6 @@
 export default {
   items: [
+    "pic/长名字大战小男孩.png",
     "pic/梦开始的地方.png",
     "pic/剑酱的🐕 2.png",
     "pic/触手play.png",
