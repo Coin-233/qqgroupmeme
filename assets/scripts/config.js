@@ -3,6 +3,7 @@ export default {
     "pic/长名字大战小男孩.png",
     "pic/梦开始的地方.png",
     "pic/剑酱的🐕 2.png",
+    "pic/已经是剑酱的东西了.png",
     "pic/触手play.png",
     "pic/被床撅晕.png",
     "pic/管理虚哩.jpg",
