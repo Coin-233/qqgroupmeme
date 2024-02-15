@@ -3,6 +3,7 @@ export default {
     "pic/梦开始的地方.png",
     "pic/剑酱的🐕 2.png",
     "pic/让我当❤.png",
+    "pic/细说impact.png",
     "pic/gfx现在是个烧货.png",
     "pic/触手play.png",
     "pic/小币崽子.png",
