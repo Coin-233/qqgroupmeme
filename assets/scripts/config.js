@@ -10,6 +10,7 @@ export default {
     "pic/可爱.png",
     "pic/被冷水强碱了.jpg",
     "pic/管理虚哩.jpg",
+    "pic/群u暴杀熊孩子.png",
     "pic/有人打炮.png",
     "pic/长名字大战小男孩.png",
     "pic/已经是剑酱的东西了.png",
