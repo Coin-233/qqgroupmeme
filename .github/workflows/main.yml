@@ -4,6 +4,15 @@ on:
     push:
     workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -21,11 +30,19 @@ jobs:
             - name: Build Web
               run: python run.py
 
-            - name: Deploy Web
-              uses: peaceiris/actions-gh-pages@v3
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v2
               with:
-                  PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-                  EXTERNAL_REPOSITORY: coin-233/qqgroupmeme
-                  PUBLISH_BRANCH: page
-                  PUBLISH_DIR: ./
-                  commit_message: ${{ github.event.head_commit.message }}
+                  path: ./
+
+    deploy:
+        environment:
+          name: github-pages
+          url: ${{ steps.deployment.outputs.page_url }}
+        needs: build
+        runs-on: ubuntu-latest
+        name: Deploy
+        steps:
+          - name: Deploy to GitHub Pages
+            id: deployment
+            uses: actions/deploy-pages@v2
